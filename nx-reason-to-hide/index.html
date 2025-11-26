@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nx Reason to Hide | Baltimore Alternative Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Stage 1: The Void (Initial Stage) -->
+    <div id="stage-void" class="stage active">
+        <div class="solar-system-container">
+            <div id="purple-planet" class="planet"></div>
+            <div class="void-hint">Enter For Nx Reason</div>
+        </div>
+    </div>
+
+    <!-- Stage: Warp Transition -->
+    <div id="stage-warp" class="stage warp-overlay">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="warp-message chrome-text">TRAVERSING THE VOID...</div>
+    </div>
+
+    <!-- Stage: Hub (Main Menu / Landing) -->
+    <div id="stage-hub" class="stage">
+        <div class="container">
+            <nav class="nav-bar">
+                <div class="logo chrome-text">Nx Reason to Hide</div>
+                <button id="menu-toggle" class="menu-btn">MENU</button>
+            </nav>
+
+            <div class="hero">
+                <h1 class="chrome-text">The Future of Unity</h1>
+                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--color-chrome-base);">
+                    Select a destination from the menu to travel.
+                </p>
+            </div>
+
+            <!-- Full Screen Menu Overlay -->
+            <div id="menu-overlay" class="menu-overlay">
+                <button id="menu-close" class="close-btn">&times;</button>
+                <div class="menu-links">
+                    <a href="#" data-target="stage-beats" class="menu-link">Beat Center</a>
+                    <a href="#" data-target="stage-artists" class="menu-link">Artists</a>
+                    <a href="#" data-target="stage-staff" class="menu-link">Staff</a>
+                    <a href="#" data-target="stage-athletics" class="menu-link">Athletics</a>
+                    <a href="#" data-target="stage-news" class="menu-link">News</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stage: Beat Center -->
+    <div id="stage-beats" class="stage content-stage">
+        <button class="back-btn" data-target="stage-hub">Return to Hub</button>
+        <div class="container">
+            <h2 class="chrome-text" style="margin-bottom: 2rem; text-align: center;">Beat Center</h2>
+            <div class="grid-2">
+                <div class="card crystal-panel">
+                    <h3>Crystal Cuts Vol. 1</h3>
+                    <p style="margin: 1rem 0; color: #ccc;">Dark ambient trap with metallic textures.</p>
+                    <div class="audio-player-mock"
+                        style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <div style="height: 4px; background: #555; border-radius: 2px; position: relative;">
+                            <div style="width: 40%; height: 100%; background: var(--color-accent-neon);"></div>
+                        </div>
+                        <div
+                            style="display: flex; justify-content: space-between; margin-top: 0.5rem; font-size: 0.8rem;">
+                            <span>1:24</span>
+                            <span>3:45</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary" style="width: 100%;">Listen / License</button>
+                </div>
+                <div class="card crystal-panel"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <h3>Submit Your Demos</h3>
+                    <p style="margin: 1rem 0;">Join the collective. Send us your best.</p>
+                    <button class="btn-primary">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stage: Artists (Discography) -->
+    <div id="stage-artists" class="stage content-stage">
+        <button class="back-btn" data-target="stage-hub">Return to Hub</button>
+        <div class="container">
+            <h2 class="chrome-text" style="margin-bottom: 2rem; text-align: center;">Artists & Discography</h2>
+
+            <div class="crystal-panel" id="meta-artist-panel"
+                style="padding: 2rem; margin-bottom: 2rem; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <h3 style="font-size: 2rem; margin-bottom: 0.5rem;" class="meta-header">META</h3>
+                <p style="margin-bottom: 1rem; opacity: 0.8;">Jermy Tirschman</p>
+                <p style="line-height: 1.6;">
+                    Jermy Tirschman is a 23 year old artist from East Baltimore City that is widely known as a local
+                    college baseball player. The stories continue to be told as he has turned many heads in the sports
+                    world with just 1 debut project named METAVERSE, How far will we travel into his own world ?, where
+                    athlete turn to artists
+                </p>
+                <p
+                    style="font-size: 0.8rem; color: var(--color-accent-neon); margin-top: 1rem; text-transform: uppercase; letter-spacing: 2px;">
+                    [ Click to Enter Metaverse ]</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stage: META Planet (Immersive Experience) -->
+    <div id="stage-meta-planet" class="stage content-stage"
+        style="background: url('metaverse_bg.jpg') no-repeat center center/cover;">
+        <button class="back-btn" data-target="stage-artists">Return to Artists</button>
+        <div class="container"
+            style="text-align: center; padding: 2rem 1rem; display: flex; flex-direction: column; align-items: center;">
+            <h1 class="chrome-text" style="font-size: 4rem; text-shadow: 0 0 30px #d0f;">METAVERSE</h1>
+
+            <!-- Untitled Stream Embed -->
+            <div style="width: 100%; max-width: 800px; margin: 0 auto 2rem auto; position: relative; z-index: 10;">
+                <iframe style="border-radius: 24px" src="https://untitled.stream/embed/MrAI2eP6k6kb" width="100%"
+                    height="344" allowFullScreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" frameborder="0"
+                    loading="lazy"></iframe>
+
+                <!-- Fallback Links -->
+                <div style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center;">
+                    <a href="https://untitled.onelink.me/IUzL/upsell" target="_blank" class="btn-primary"
+                        style="text-decoration: none; font-size: 0.8rem;">Download App</a>
+                    <a href="untitled://library/project/Jrssgy0joG3c3zcSnaZ9D" class="btn-primary"
+                        style="text-decoration: none; font-size: 0.8rem;">Open in App</a>
+                </div>
+            </div>
+
+            <!-- YouTube Video Embed 1 -->
+            <div style="width: 100%; max-width: 800px; margin: 0 auto 2rem auto; position: relative; z-index: 10;">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/hhnAoVLZEsE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="border-radius: 24px; box-shadow: 0 0 30px rgba(157, 78, 221, 0.5);"></iframe>
+            </div>
+
+            <!-- YouTube Video Embed 2 (New) -->
+            <div style="width: 100%; max-width: 800px; margin: 0 auto 2rem auto; position: relative; z-index: 10;">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/-V71XiWyPvQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="border-radius: 24px; box-shadow: 0 0 30px rgba(157, 78, 221, 0.5);"></iframe>
+            </div>
+
+            <p
+                style="font-size: 1.5rem; max-width: 600px; color: #e0e0e0; text-shadow: 0 2px 4px rgba(0,0,0,0.8); margin-top: 2rem; position: relative; z-index: 10;">
+                "Where athlete turns to artist."</p>
+        </div>
+
+        <!-- Immersive Background Effects -->
+        <div class="storm-clouds"></div>
+        <div class="lightning-flash"></div>
+    </div>
+
+    <!-- Stage: Staff -->
+    <div id="stage-staff" class="stage content-stage">
+        <button class="back-btn" data-target="stage-hub">Return to Hub</button>
+        <div class="container">
+            <h2 class="chrome-text" style="margin-bottom: 2rem; text-align: center;">Staff</h2>
+            <div class="grid-3">
+                <div class="card crystal-panel" style="text-align: center;">
+                    <div
+                        style="width: 100px; height: 100px; background: #333; border-radius: 50%; margin: 0 auto 1rem; border: 2px solid var(--color-crystal-glow);">
+                    </div>
+                    <h4>Founder</h4>
+                    <p>Visionary & Lead Producer</p>
+                </div>
+                <div class="card crystal-panel" style="text-align: center;">
+                    <div
+                        style="width: 100px; height: 100px; background: #333; border-radius: 50%; margin: 0 auto 1rem; border: 2px solid var(--color-crystal-glow);">
+                    </div>
+                    <h4>Audio Engineer</h4>
+                    <p>Mixing & Mastering</p>
+                </div>
+                <div class="card crystal-panel" style="text-align: center;">
+                    <div
+                        style="width: 100px; height: 100px; background: #333; border-radius: 50%; margin: 0 auto 1rem; border: 2px solid var(--color-crystal-glow);">
+                    </div>
+                    <h4>Visual Director</h4>
+                    <p>Art & Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stage: Athletics -->
+    <div id="stage-athletics" class="stage content-stage">
+        <button class="back-btn" data-target="stage-hub">Return to Hub</button>
+        <div class="container">
+            <h2 class="chrome-text" style="margin-bottom: 2rem; text-align: center;">Athletics</h2>
+            <div class="crystal-panel" style="padding: 4rem; text-align: center;">
+                <h3 style="margin-bottom: 1rem;">Nx Reason Athletics</h3>
+                <p>Performance gear for the digital age. Coming Soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stage: News -->
+    <div id="stage-news" class="stage content-stage">
+        <button class="back-btn" data-target="stage-hub">Return to Hub</button>
+        <div class="container">
+            <h2 class="chrome-text" style="margin-bottom: 2rem; text-align: center;">Echoes (News)</h2>
+            <div class="grid-3">
+                <div class="card crystal-panel">
+                    <div
+                        style="height: 150px; background: #2a1b3d; margin-bottom: 1rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                        <span style="color: var(--color-crystal-glow);">[IMG: New Merch Drop]</span>
+                    </div>
+                    <h4>New Merch Drop</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Limited edition chrome pendants
+                        available
+                        now.</p>
+                </div>
+                <div class="card crystal-panel">
+                    <div
+                        style="height: 150px; background: #2a1b3d; margin-bottom: 1rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                        <span style="color: var(--color-crystal-glow);">[IMG: Show Announcement]</span>
+                    </div>
+                    <h4>Live at The Cave</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Catch us live this Friday at the
+                        Underground.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
